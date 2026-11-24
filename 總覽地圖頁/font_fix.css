@@ -10,3 +10,8 @@
   h2{margin:8px 0 4px}h2 .n{font-size:1.6rem}
   summary{padding:5px 4px}
 }
+/* 2026-11-24 每一步少掉的是什麼（Joy：不然會以為有東西不見了） */
+.why{font-size:.9rem;color:var(--fg);border-left:3px solid var(--line);padding:2px 0 2px 12px;margin:6px 0 16px}
+.why b{font-size:.9rem}
+.why ul{margin:4px 0 0;padding-left:1.1em}
+.why li{margin:2px 0;line-height:1.55}
