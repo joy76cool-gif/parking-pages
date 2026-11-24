@@ -1,0 +1,225 @@
+<style>
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:12px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.kpi .l{color:var(--muted);font-size:13px}.kpi .v{font-size:21px;font-weight:700;white-space:nowrap}.kpi .s{color:var(--muted);font-size:12.5px}
+.rows{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:2px 14px;margin:8px 0}
+.rows details{border:0;border-bottom:1px solid var(--line);border-radius:0;margin:0;padding:8px 0;background:none}
+.rows details:last-child{border-bottom:0}
+.rows summary{font-weight:400;list-style:none;display:flex;gap:10px}.rows summary::-webkit-details-marker{display:none}
+.rows summary .k{color:var(--muted);min-width:4.6em;flex:none;font-size:13.5px}.rows details{padding:6px 0}.rows summary .a{flex:1}
+.rows summary:after{content:"出處 ▸";color:var(--muted);font-size:12px;flex:none}.rows details[open] summary:after{content:"收起 ▾"}
+.src{color:var(--muted);font-size:13.5px;padding:6px 0 2px 0}
+@media (max-width:600px){.kpi .v{font-size:19px}}
+.big2{font-size:22px;font-weight:700;color:var(--acc);white-space:nowrap}
+.two>*{min-width:0}.two{display:grid;grid-template-columns:minmax(0,0.75fr) minmax(0,1.25fr);gap:12px;align-items:start}@media (max-width:760px){.two{grid-template-columns:minmax(0,1fr)}}.side{margin:8px 0}table.mini{font-size:13.5px}table.mini td,table.mini th{padding:4px 6px;text-align:right;white-space:nowrap}table.mini td:first-child,table.mini th:first-child{text-align:left}table.mini tr.t td{font-weight:700}table.mini{table-layout:auto;width:100%}table.mini td:first-child{white-space:normal}
+.src{overflow-wrap:anywhere;word-break:break-word;line-height:1.75}.rows summary .a{min-width:0;overflow-wrap:anywhere}.tscroll{overflow-x:auto;margin:6px 0}.calc .h{font-weight:700;color:var(--fg);margin:10px 0 2px;font-size:14.5px}.calc .h:first-child{margin-top:0}.calc .i{margin-left:0.6em}.calc .i2{margin-left:1.8em}.calc .m{font-size:12.5px}
+:root{--acc-text:#1d4fbf}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--acc-text:#8fb4ff}}:root[data-theme="dark"]{--acc-text:#8fb4ff}
+a{color:var(--acc-text);text-decoration:underline}.calc2 summary .k{color:var(--acc-text)}
+.two{grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr)!important}
+@media (max-width:760px){.two{grid-template-columns:minmax(0,1fr)!important}.two>div:last-child{order:-1}}
+@media (min-width:600px) and (max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.rows summary .k{width:6.6em;min-width:6.6em!important;font-size:13px;white-space:nowrap}.rows details{padding:4px 0!important}
+.rows summary:after{content:none!important}.rows summary .k:before{content:"▸ ";color:var(--muted)}.rows details[open] summary .k:before{content:"▾ "}
+.tag{display:inline-block;font-size:12px;font-weight:700;color:var(--bad);border:1px solid var(--bad);border-radius:4px;padding:0 4px;margin-left:4px}
+.cp{font:inherit;font-size:12.5px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);padding:2px 8px;cursor:pointer;margin-left:2px}
+</style>
+<h1>板橋信義國小地下停車場</h1>
+<h2 style="margin-top:8px">重點</h2>
+<div class="kpis">
+<div class="kpi"><div class="l">停車格</div><div class="v">259 格</div><div class="s">汽車；機車沒寫</div></div>
+<div class="kpi"><div class="l">預計每月營業額（假設）</div><div class="v">90.9 萬</div><div class="s">臨停有停車 50%、月租出租率 80%</div></div>
+<div class="kpi"><div class="l">扣掉每月成本後（假設）</div><div class="v">14.7 萬</div><div class="s">地價稅、電費還是 0；保險、水電用新北同類停車場中位數（線索）</div></div>
+<div class="kpi"><div class="l">回本時間（假設）</div><div class="v">16.7 個月</div><div class="s">開辦費只算 223.5 萬＋試停 1 個月沒收入 22.1 萬，47 項設備沒算（找不到舊價或數量未確認），會變長</div></div>
+</div>
+<div class="note">⚠ 投標送件地點改了（11/19 更正公告，標案軍師 FAR-2-70024289；新版投標須知 xinyi_notice_20261118更正.pdf，案源 11/19 下載、我開第 4 頁核對過）：專人送達和郵遞都改成「新北市三重區重新路一段 108 號 4 樓（交通局停車管理科）」，郵遞區號 242；舊版寫安芯路 1 號 22 樓，不要送錯。開標改在同址 4 樓會議室（第 5 頁）；外標封地址同步改（第 35 頁）；12/7 起洽公電話 02-29955000 分機 21356（第 7 頁）。截止 11/26（四）17:00、不收電子投標、權利金下限 1,734 萬、4 年、259 格都沒變。公告說第 16 頁疑義申訴也有改，案源逐頁比對新舊版文字一樣，未確認改了什麼。</div><div class="note">這幾個數字是下面「營業額和成本」的預設值，可以在那裡改數字。賺不賺：<b>還在算</b>。設備有 47 項沒算（11/20 對過公司舊價，29 項找不到）；24 小時派人用同業線索每月 200,000 估（公司沒有現場人力的報價，只有 24 小時電話客服每月 35,000 的報價）。</div>
+
+<h2>投標</h2>
+<div class="kpis">
+<div class="kpi"><div class="l">投標截止</div><div class="v">11/26（四）17:00</div><div class="s">還有 7 個工作天</div></div>
+<div class="kpi"><div class="l">標案類型</div><div class="v">經營案・4 年</div><div class="s">我們付權利金給新北市交通局</div></div>
+<div class="kpi"><div class="l">權利金下限</div><div class="v">4 年 1,734 萬</div><div class="s">每月約 36.1 萬；收入超過預估 1.15 倍還要分成</div></div>
+<div class="kpi"><div class="l">要先押的錢</div><div class="v">249 萬＋173 萬</div><div class="s">押標金＋履約保證金（得標才押）</div></div>
+</div>
+
+<div class="two"><div><h2>基本資料</h2>
+<div class="rows">
+<details><summary><span class="k">地址</span><span class="a">板橋區四川路二段 245 巷 60 號</span></summary><div class="src">地下 1～3 層（契約 PDF 第 9 頁）。<br><a href="https://www.google.com/maps/search/%E6%96%B0%E5%8C%97%E5%B8%82%E6%9D%BF%E6%A9%8B%E5%8D%80%E5%9B%9B%E5%B7%9D%E8%B7%AF%E4%BA%8C%E6%AE%B5245%E5%B7%B760%E8%99%9F" target="_blank" rel="noopener">地圖</a></div></details>
+<details><summary><span class="k">資料夾</span><span class="a" style="overflow-wrap:anywhere">\\192.168.0.2\01總經理室\08業務管理\08 卓鈺婷\停車場專案\30_案件\1_評估中\1_標案\2026-11-26截止_新北板橋信義國小</span></summary><div class="src">1_招標文件：契約、投標須知原檔<br>2_評估與報價：設備清單報價表.xlsx<br>_AI工作檔\評估底稿：詢價單草稿、15 筆地號、地價稅、充電法規、之前誰經營<br><button type="button" class="cp" data-cp="\\192.168.0.2\01總經理室\08業務管理\08 卓鈺婷\停車場專案\30_案件\1_評估中\1_標案\2026-11-26截止_新北板橋信義國小">複製路徑</button>　複製後貼到檔案總管上面的網址列，按 Enter 就會打開。</div></details>
+<details><summary><span class="k">決標方式</span><span class="a">評選（看服務建議書評分，不是比價錢）</span></summary><div class="src">投標須知第一點（一）：依「停車場法」及「新北市公有路外停車場委託經營辦法」以評選方式辦理。<br>總分 100 分，超過半數評選委員給 80 分以上才合格；各委員評分轉成名次（序位）加總，序位最好的優先議約（投標須知評選規定）。<br>權利金出價也在評分項目裡，配分要看評分表。</div></details>
+<details><summary><span class="k">之前誰經營</span><span class="a">沒有，新蓋好、第一次招標</span></summary><div class="src">政府電子採購網（標案軍師查）只有新建工程、設計和這次 11/06 的委託經營公告（案號 1151106），沒有前期經營或續約標案；<br>契約 PDF 第 19 頁寫「預計於開始經營前辦理啟用典禮」。<br>工程由偉大建設 112 年得標，541,500,000 元，履約到 115/07/22（第 1 次變更後）。<br>啟用日期契約沒寫，新聞說目標 2026 年 11 月完工（線索）。<br>只查了採購網，新北市交通局自己的公告沒查。<br>標案軍師 11/19 查（qbid 公開 API）：信義國小地下停車場這次是第 1 次招標，沒有前案。</div></details>
+<details><summary><span class="k">標案</span><span class="a">信義國小地下停車場委託經營案</span></summary><div class="src"><a href="https://web.pcc.gov.tw/opas/arpam/public/readOneArpamDetailOld?pk=70024289" target="_blank" rel="noopener">政府電子採購網公告</a>　<a href="https://www.traffic.ntpc.gov.tw/home.jsp?id=c8529e1525d82126&act=be4f48068b2b0031&dataserno=43389ddcbd124002abe1687b6f55e28d" target="_blank" rel="noopener">新北市交通局公告（可下載須知和契約）</a>。<br>權利金 1,734 萬見投標須知第 1 頁第七點，稅別沒寫；<br>押標金 249 萬見須知第 2 頁；<br>履約保證金＝權利金 10%，用下限算 173.4 萬（須知第 6 頁）。</div></details>
+<details><summary><span class="k">格數</span><span class="a">汽車 259 格、約 2,690 坪</span></summary><div class="src">投標須知第 1 頁：小型車 259 格（身障 6、孕婦育兒 6、電動車 6）；<br>總樓地板 8,892.06 平方公尺 × 0.3025 ＝ 2,689.85 坪；<br>機車格招標文件沒寫。</div></details>
+<details><summary><span class="k">面臨道路</span><span class="a">四川路二段 245 巷，約 12 公尺</span></summary><div class="src">契約 PDF 第 121 頁位置圖：「自四川路二段245巷進出場」，一進一出。<br>路寬是在<a href="https://urban.planning.ntpc.gov.tw/NtpcURInfo/" target="_blank" rel="noopener">新北市城鄉資訊查詢平台</a>地圖上量的 12.05 公尺（線索，官方寬度沒查到）。</div></details>
+<details><summary><span class="k">停車需求</span><span class="a">附近 6 座白天平均 75.5% 有車（全天 77.2%）</span></summary><div class="src">
+附近 1 公里內有即時資料的 6 座公有停車場，11/12（四）、11/14（六）、11/15（日）每 15 分鐘的剩餘格數（新北市開放資料即時剩餘格數，存在 NAS：\\192.168.0.2\01總經理室\08業務管理\08 卓鈺婷\停車場專案\20_市調與評估\1_市場資料\桃園新北即時格數_S2-13_2026-11-11\，檔案 取樣_2026-11-12.csv、取樣_2026-11-14.csv、取樣_2026-11-15.csv）：<br>
+<div class="tscroll"><table class="mini"><tr><th>停車場（代號、距離）</th><th>格數</th><th>全天</th><th>平日白天</th><th>假日白天</th></tr>
+<tr><td>學成公園地下（130071，415 公尺）</td><td>179</td><td>86.5%</td><td>73.3%</td><td>94.3%</td></tr>
+<tr><td>華東（010024，536 公尺）</td><td>238</td><td>66.9%</td><td>63.8%</td><td>70.6%</td></tr>
+<tr><td>捷運海山站轉乘（130011，643 公尺）</td><td>63</td><td>85.9%</td><td>92.8%</td><td>95.2%</td></tr>
+<tr><td>土城板院段平面（130136，723 公尺）</td><td>47</td><td>69.0%</td><td>47.0%</td><td>87.6%</td></tr>
+<tr><td>湳仔溝 C 區（010277，905 公尺）</td><td>7</td><td>35.2%</td><td>74.0%</td><td>41.2%</td></tr>
+<tr><td>新北高工地下（130121，947 公尺）</td><td>217</td><td>81.6%</td><td>78.9%</td><td>89.1%</td></tr>
+<tr class="t"><td>照格數加權</td><td>751</td><td>77.2%</td><td>71.9%</td><td>84.4%</td></tr></table></div>
+算法：Σ（格數 × 有車比例）÷ Σ 格數 ＝（179×86.5＋238×66.9＋63×85.9＋47×69.0＋7×35.2＋217×81.6）÷ 751 ＝ 77.2%。距離是從案源 S2-16 定的位置（24.991737, 121.452813，門牌定位，假設）算的直線距離；名字裡有「湳仔溝」的還有 A 區（34 格、2,032 公尺）、B 區（25 格、1,102 公尺），超過 1 公里沒算。白天＝8～18 點；平日只有 11/12 一天。不照格數直接平均，全天是 70.85%。華德公園、莒光四村三天數字都沒變過，資料沒在更新，沒算。這是「附近現在的樣子」，不是這座停車場的預測；高、中、低沒有定標準，所以只放數字。</div></details>
+<details><summary><span class="k">附近停車場</span><span class="a">500 公尺內 3 座</span></summary><div class="src">
+• 華德公園平面：55 公尺，每小時 30 元、月租 2,400 元　<a href="https://www.google.com/maps/search/%E8%8F%AF%E5%BE%B7%E5%85%AC%E5%9C%92%E5%B9%B3%E9%9D%A2%E5%81%9C%E8%BB%8A%E5%A0%B4" target="_blank" rel="noopener">地圖</a><br>
+• Times 土城廣福街第 2：375 公尺，每小時 80 元、月租 8,000 元　<a href="https://www.google.com/maps/search/Times%20%E5%9C%9F%E5%9F%8E%E5%BB%A3%E7%A6%8F%E8%A1%97%E7%AC%AC2%E5%81%9C%E8%BB%8A%E5%A0%B4" target="_blank" rel="noopener">地圖</a><br>
+• 學成公園地下（土城）：413 公尺，每小時 30 元、月租 4,000 元　<a href="https://www.google.com/maps/search/%E5%AD%B8%E6%88%90%E5%85%AC%E5%9C%92%E5%9C%B0%E4%B8%8B%E5%81%9C%E8%BB%8A%E5%A0%B4" target="_blank" rel="noopener">地圖</a><br>出處：案源 S2-16（11/16）。</div></details>
+<details><summary><span class="k">收費</span><span class="a">臨停每小時 30 元，一天沒有最高額；<br>月票最高 4,000 元</span></summary><div class="src">契約 PDF 第 12～14 頁：這是上限，可以打折；<br>未滿 30 分鐘免費；<br>里民月票 3,200、身障 2,000。<br><b>一天最高收多少：</b>契約第 12～13 頁只寫每小時 30 元和月票上限，沒有寫一天最多收多少，所以停越久收越多（停 24 小時＝720 元）。契約說收費要照「新北市公有停車場管理自治條例」，那份條例有沒有另訂一天上限，還沒查到原文（未確認）。<br>打折後要調回，平均停車率要連續 3 個月高於 90%，一年最多一次。</div></details>
+<details><summary><span class="k">使用分區</span><span class="a">學校用地</span></summary><div class="src">15 筆地號全部是學校用地（新北市城鄉資訊查詢平台 11/17 查，平台註明僅供參考）。<br>學校用地可不可以做停車場的條文還沒查到【待證實】。</div></details>
+<details><summary><span class="k">充電車位</span><span class="a">契約 6 格，法規 5.18 格，夠</span></summary><div class="src">契約 PDF 第 9 頁、附件E 第 3 項：6 格，機關通知後 2 個月內設好，每格要語音提示和車格前鏡頭。<br>法規：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040078" target="_blank" rel="noopener">電動汽車充電專用停車位及其充電設施設置管理辦法第 2 條</a>公有停車場 2% 以上，259 × 2% ＝ 5.18。<br>新北市有沒有調高：沒查到。</div></details>
+</div>
+
+<h2>設備</h2>
+<div class="card">
+<div>附件E 要裝 39 項，有舊價的部分（含車格前 18 支鏡頭）</div>
+<div class="big2">1,234,580 元（未稅）</div>
+<div class="sub">含稅 1,296,309 元；另外 47 項沒算：29 項找不到舊價、14 項是服務或文件、4 項只有類似品價但數量未確認（11/20 對公司舊價）</div>
+<div class="note">還沒算：47 項（29 項找不到舊價、14 項服務或文件、4 項數量未確認）；錄影主機、硬碟、佈線；各樓梯間鏡頭。</div>
+<div style="margin-top:6px">機關通知擴充 1 處時，再加 <b>567,084 元（含稅）</b><span class="sub">，未稅 540,080；擴充場攝影機數量契約沒寫，沒算</span></div>
+</div>
+
+<h2>契約外也要出的錢</h2>
+<div class="card">
+<div class="big2">4 年至少 3,839,060 元</div>
+<div class="sub">稅別未確認（契約沒寫）</div>
+<div class="li">• 房屋稅每年 709,765 元，4 年 2,839,060 元</div>
+<div class="li">• 啟用典禮至少 60 萬元</div>
+<div class="li">• 服務品質經費至少 40 萬元</div>
+<details><summary>契約沒寫金額的還有 8 項（點開）</summary><div class="src">火險每年保額至少 96,272,860 元（保費沒寫）；<br>免費試停 1 個月的水電和巡場；<br>安全監控計畫；<br>識別圖騰；<br>施工影片；<br>每層巡場簽到處；<br>擴充場每年至少 5 萬元經費；<br>投標寫的期初投資花不到要繳回。<br>頁碼見下方「報價表：契約外要出的錢」。</div></details>
+</div>
+
+</div><div><h2>營業額和成本</h2><div class="card side calc2" id="c2" data-cfg='{&quot;id&quot;: &quot;banqiao&quot;, &quot;n&quot;: 259, &quot;months&quot;: 48, &quot;evLaw&quot;: 6, &quot;areaNote&quot;: &quot;評估判斷是住宅區：附近是學校、公園和巷弄住家（契約位置圖），周邊都市計畫分區還沒查&quot;, &quot;feeNote&quot;: &quot;表訂月租 4,000、每小時 30 元是契約上限（可以打折）；白天營業 10 小時、月租臨停比例是假設（Joy 11/17）；附近 6 座白天（8～18 點）有車：平日 71.9%、假日 84.4%，照一週 5 個平日 2 個假日加權 ＝ 75.5%&quot;, &quot;evLawNote&quot;: &quot;公有停車場要設小型車位 2% 以上：259 × 2% ＝ 5.18，進位 6 格（電動汽車充電專用停車位及其充電設施設置管理辦法第 2 條）&quot;, &quot;evNote&quot;: &quot;契約 PDF 第 9 頁、附件E 第 3 項&quot;, &quot;staffNote&quot;: &quot;同業線索：嘟嘟房 2021「約需 5 人，每人 4 萬」；公司沒有現場人力報價&quot;, &quot;svcNote&quot;: &quot;每格 408.19 × 259，台中自營場的數字&quot;, &quot;taxNote&quot;: &quot;709,765 ÷ 12，契約 PDF 第 16 頁&quot;, &quot;landNote&quot;: &quot;先填 0。法規：公有地供公眾使用的停車場，地價稅可以免（土地稅減免規則第 7 條第 1 項第 13 款），而且是地主機關繳、不是經營者（土地稅法第 3 條）；但這塊地登記是學校用地，有沒有申請到免稅沒查到【未確認】。契約只寫乙方負擔「各項稅捐」，沒寫地價稅，建議投標前書面問機關&quot;, &quot;insNote&quot;: &quot;259 格 × 地下 250～400 格保險中位數每格每月 15.4 元（16 場）。大場保費不跟格數等比增加，所以用格數相近的場比，不用全體每格中位數。新北市交通局 109～112 年說明會簡報前期業者實際值（S2-17 簡報文字版；新分析員 11/19 自寫程式重算 201 場、抽 5 場對 PDF；稅別未確認，109～112 年混在一起沒調物價）。板橋契約要求火險保額至少 9,627 萬，真正保費要等報價。&quot;, &quot;utilNote&quot;: &quot;259 格 × 學校地下停車場水電中位數每格每月 139.0 元（28 場）。新北市交通局 109～112 年說明會簡報前期業者實際值（S2-17 簡報文字版；新分析員 11/19 自寫程式重算 201 場、抽 5 場對 PDF；稅別未確認，109～112 年混在一起沒調物價）。&quot;, &quot;rentDesc&quot;: &quot;權利金下限 1,734 萬 ÷ 48 個月&quot;, &quot;rentNote&quot;: &quot;投標須知第 1 頁第七點：4 年至少 1,734 萬，稅別沒寫；權利金分成另列在下一列&quot;, &quot;openDesc&quot;: &quot;設備（有舊價）＋典禮＋服務經費&quot;, &quot;openNote&quot;: &quot;設備有舊價的部分未稅 1,234,580（含稅 1,296,309）＋啟用典禮 600,000＋服務品質經費 400,000（這兩項稅別契約沒寫）；還有 47 項設備沒算（29 項找不到舊價、14 項服務或文件、4 項數量未確認；11/20 對公司舊價）&quot;, &quot;open&quot;: [], &quot;def&quot;: {&quot;area&quot;: &quot;res&quot;, &quot;rBiz&quot;: 80, &quot;rRes&quot;: 60, &quot;monthFee&quot;: 4000, &quot;hourFee&quot;: 30, &quot;evCount&quot;: 6, &quot;evMonthKwh&quot;: 200, &quot;kw&quot;: 7, &quot;evShare&quot;: 50, &quot;kwhPrice&quot;: 10, &quot;kwhCost&quot;: 0, &quot;staff&quot;: 200000, &quot;svc&quot;: 105721, &quot;houseTax&quot;: 59147, &quot;landTax&quot;: 0, &quot;insure&quot;: 3989, &quot;util&quot;: 36001, &quot;cardFee&quot;: 1.64, &quot;rent&quot;: 361250, &quot;open&quot;: 2234580, &quot;occ&quot;: 50, &quot;tHours&quot;: 10, &quot;rentRate&quot;: 80, &quot;shareRate&quot;: 47.5, &quot;preMonths&quot;: 1, &quot;preRent&quot;: 0, &quot;preStaffPct&quot;: 40, &quot;motoN&quot;: 0, &quot;motoFee&quot;: 0, &quot;busN&quot;: 0, &quot;busFee&quot;: 0, &quot;collect&quot;: 88.24}, &quot;nearP&quot;: 75.5, &quot;nearLabel&quot;: &quot;附近 6 座白天平均&quot;, &quot;share&quot;: {&quot;mode&quot;: &quot;pred&quot;}, &quot;shareDesc&quot;: &quot;年收入超過服務建議書預估 1.15 倍的部分，機關分 47.5%&quot;, &quot;shareNote&quot;: &quot;契約 PDF 第 8 頁（名詞定義第 9 款）、第 23 頁（第五條二）：以甲方核定之服務建議書預估年收入 1.15 倍為基準，超過部分甲方 47.5%、乙方 52.5%。年收入含稅或未稅契約沒寫（未確認），先不換算。營業額有含充電收入，契約沒寫要不要含（未確認）。&quot;, &quot;pre&quot;: true, &quot;preDesc&quot;: &quot;免費試停 1 個月（不能收費）&quot;, &quot;preNote&quot;: &quot;契約 PDF 第 20 頁（第三條四(二十一)）：免費試停「期間以 1 個月為原則」，不納入 4 年委託經營期間、不收經營權利金；試停期間要派員巡場，水電、公共意外險和火險乙方付。定額權利金第 1 期「應於營運日前繳交」（附件壹，PDF 第 45 頁），試停「不納入委託經營期間」，定額權利金是 48 個月分 16 期，試停那個月本來就不在這 16 期裡，所以選「不用付」（從條文推得）。&quot;, &quot;preStaffNote&quot;: &quot;試停期間契約只要求「派員定時巡場」，24 小時派員是營運期才要；先用 40%（假設：5 人裡 2 人巡場）&quot;, &quot;payNote&quot;: &quot;；已含開業前沒收入&quot;, &quot;extra&quot;: true, &quot;extraDesc&quot;: &quot;契約沒有機車、大型車&quot;, &quot;motoNote&quot;: &quot;契約只寫小型車格，沒寫機車格和機車收費，填 0（契約 PDF 第 8～9、12～13 頁；大型重機可由小型車格改，月票上限 1,500、計時比照汽車，已含在小型車裡）&quot;, &quot;busNote&quot;: &quot;契約沒寫大型車格和收費，填 0&quot;, &quot;collectNote&quot;: &quot;台中自營 4 場 2026/4～9 臨停明細（有進出場時間的 23,455 筆）：實收 1,846,374 元 ÷（停車總時數 69,745.9 小時 × 每小時 30 元 ＝ 2,092,377）＝ 88.24%（每月 83.6%～91.6%）。這跟我們的算法同一個口徑（有車的時數 × 每小時費率），已經把免費寬限、每 30 分進位、每日上限、逃費和故障都算在裡面。弱點：分母全用平日 30 元，假日 40 元沒拆，所以真正的比例還會再低一點；只有台中 4 場，新北、台南、高雄的收費規則不同，能不能套用未確認；機車計次和大型車沒量過，先用同一個比例。（另一個 99.71% 是「實收 ÷ 照規則逐筆重算」，寬限是用同一批資料調出來的，跟這裡的算法口徑不同，不用。）月租是先收錢，不打折。出處：NAS 08 資料夾 .sdd\\2026-10-22-標案評估\\實收係數\\（11/19 新分析員用同一份明細重算，我重跑程式得到同樣結果）。&quot;, &quot;netNote&quot;: &quot;&quot;}'>
+<div class="c2h"><span></span><span class="sub">框裡的數字可以改</span></div>
+<div class="sum"></div>
+<label class="sub" for="c2r">有停車的比例（白天營業時間裡）：<b class="pv"></b>　<span style="color:var(--acc-text,#1d4fbf)">藍色數字會跟著拉桿變</span></label>
+<div class="rng"><input type="range" id="c2r" class="pr" min="0" max="100" step="1" aria-label="有停車的比例"><i class="mk be-mk"></i><i class="mk nb-mk"></i></div>
+<div class="sub lg"><span class="t1"></span>　<span class="t2"></span></div>
+<div class="rowsx"></div>
+<button type="button" class="reset"></button>
+<div class="sub">框裡變藍色粗體的，是妳改過的數字，會記在這台裝置上。</div>
+</div>
+<style>
+.calc2{--chg:var(--acc-text,#1d4fbf)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .calc2{--chg:var(--acc-text,#8fb4ff)}}
+:root[data-theme="dark"] .calc2{--chg:var(--acc-text,#8fb4ff)}
+.calc2 .c2h{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2px}
+.calc2 .sum{font-weight:700;font-size:15px;margin:2px 0 6px}
+.calc2 .rng{position:relative}
+.calc2 .pr{width:100%;height:28px;accent-color:var(--acc)}
+.calc2 .mk{position:absolute;top:2px;width:3px;height:24px;border-radius:2px;pointer-events:none}
+.calc2 .be-mk{background:var(--bad)}.calc2 .nb-mk{background:var(--muted)}
+.calc2 .lg .t1{color:var(--bad)}
+.calc2 details{border:0;border-top:1px solid var(--line);border-radius:0;padding:8px 0;margin:0;background:none}
+.calc2 summary{list-style:none;display:grid;grid-template-columns:7.4em minmax(0,1fr) auto;gap:8px;align-items:baseline;cursor:pointer}
+.calc2 summary::-webkit-details-marker{display:none}
+.calc2 summary .k{font-weight:700;color:var(--acc)}
+.calc2 summary .k:before{content:"▸ ";color:var(--muted);font-weight:400}
+.calc2 details[open] summary .k:before{content:"▾ "}
+.calc2 summary .d{color:var(--muted);font-size:12.5px;overflow-wrap:anywhere}
+.calc2 summary .v{font-weight:700;font-size:16px;white-space:nowrap;text-align:right}
+.calc2 .v.neg{color:var(--bad)}
+.calc2 details.dyn summary .v{color:var(--acc-text,#1d4fbf)}.calc2 .pv{color:var(--acc-text,#1d4fbf)}.calc2 .bd b.dy{color:var(--acc-text,#1d4fbf)}
+.calc2 details.dyn summary .v.neg{color:var(--bad)}
+.calc2 details.tot{border-top:2px solid var(--fg);margin-top:2px}
+.calc2 details.tot summary .k,.calc2 details.tot summary .v{color:var(--acc-text,#1d4fbf)}
+.calc2 details.tot summary .v{font-size:18px}
+.calc2 .tag{display:inline-block;font-size:11px;font-weight:700;color:var(--bad);border:1px solid var(--bad);border-radius:4px;padding:0 4px;margin-left:4px}
+.calc2 .bd{font-size:13.5px;padding:6px 0 0 0.6em;line-height:1.85}
+.calc2 .bd .m{color:var(--muted);font-size:12.5px;display:block;margin:0 0 4px}
+.calc2 input.n{font:inherit;font-size:13.5px;padding:1px 4px;border:1px solid var(--line);border-radius:5px;background:var(--in);color:var(--fg);text-align:right}
+.calc2 input.n.ch{color:var(--chg);font-weight:700}
+.calc2 select{font:inherit;font-size:13.5px;border:1px solid var(--line);border-radius:5px;background:var(--in);color:var(--fg)}
+.calc2 .reset{margin:8px 0 2px;font:inherit;font-size:13px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);padding:6px 12px;cursor:pointer;min-height:36px}
+@media (max-width:600px){.calc2 summary{grid-template-columns:minmax(0,1fr) auto}.calc2 summary .d{grid-column:1/-1;order:3}.calc2 input.n,.calc2 select{font-size:16px;min-height:36px}}
+@media (pointer:coarse){.calc2 input.n,.calc2 select{min-height:44px}}
+</style>
+<script>(()=>{
+const c=document.getElementById('c2');const C=JSON.parse(c.dataset.cfg);const KEY='calc4_'+C.id;
+let S={};try{S=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+const D=C.def;const g=k=>S[k]!==undefined?S[k]:D[k];
+const f=n=>(n<0?'−':'')+Math.abs(Math.round(n)).toLocaleString('zh-TW');
+const w=n=>{const a=Math.abs(n);return (n<0?'−':'')+(a>=1e4?(Math.round(a/1e3)/10).toLocaleString('zh-TW')+' 萬':Math.round(a).toLocaleString('zh-TW'))};
+const inp=(k,step,unit)=>`<input class="n${S[k]!==undefined?' ch':''}" data-k="${k}" type="number" inputmode="decimal" step="${step||'any'}" value="${g(k)}" style="width:${Math.max(4.2,String(g(k)).length*0.62+2.4)}em"> ${unit||''}`;
+const pr=c.querySelector('.pr');pr.value=g('occ');let first=true;
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+function calc(P,noShare){const T=g('tHours');
+ const N=C.n,area=g('area');const mr=area==='biz'?g('rBiz'):g('rRes');const nM=N*mr/100,nT=N-nM;
+ const cr=(g('collect')==null?100:Number(g('collect')))/100;const revM=nM*g('rentRate')/100*g('monthFee'),revT=nT*P*g('hourFee')*30*T*cr;const rev=revM+revT;
+ const ev=g('evCount'),evM=ev*mr/100,evT=ev-evM;const kwhM=evM*g('evMonthKwh'),kwhT=evT*g('kw')*T*30*g('evShare')/100*P;const kwh=kwhM+kwhT;
+ const evRev=kwh*g('kwhPrice'),evCost=kwh*g('kwhCost');const mN=C.extra?Number(g('motoN')):0,bN=C.extra?Number(g('busN')):0;const extM=mN*P*g('motoFee')*30*cr,extB=bN*P*g('busFee')*T*30*cr,ext=C.extra?extM+extB:0;const fee=(rev+evRev+ext)*g('cardFee')/100;
+ const ops=g('staff')+g('svc')+g('houseTax')+g('landTax')+g('insure')+g('util')+fee+evCost;const rent=g('rent');const sh=C.share||{mode:'none'};const yr=(rev+evRev+ext)*12;const yrN=sh.taxIncl?yr/1.05:yr;let share=0,base=0;if(!noShare){if(sh.mode==='pred'){base=g('predRev')*1.15;share=Math.max(0,yrN-base)*g('shareRate')/100/12}else if(sh.mode==='fixed'){base=rent*12*2*1.15;share=Math.max(0,yrN-base)*g('shareRate')/100/12}else if(sh.mode==='pct'){share=(sh.taxIncl?(rev+evRev+ext)/1.05:(rev+evRev+ext))*g('shareRate')/100}}const net=rev+evRev+ext-ops-rent-share;
+ return {mN,bN,extM,extB,ext,N,mr,nM,nT,revM,revT,rev,ev,evM,evT,kwhM,kwhT,kwh,evRev,evCost,fee,ops,rent,share,base,yr,yrN,net};}
+function breakeven(){if(calc(1).net<0)return null;let lo=0,hi=1;for(let i=0;i<40;i++){const m=(lo+hi)/2;calc(m).net<0?lo=m:hi=m}return hi}
+function draw(){
+ if(C.share&&C.share.mode==='pred'){const r0=calc(D.occ/100,true);D.predRev=Math.round((r0.rev+r0.evRev+r0.ext)*12)}
+ const H=g('occ');const r=calc(H/100);const open=g('open');const months=C.months;const pm=Number(g('preMonths')||0),preRent=Number(g('preRent')||0);const sp=(g('preStaffPct')==null?100:Number(g('preStaffPct')))/100;const fixedM=(g('staff')+g('svc'))*sp+g('houseTax')+g('landTax')+g('insure')+g('util')+(preRent?g('rent'):0);const preCost=pm*fixedM;const openT=open+preCost;const pay=r.net>0&&openT>0?openT/r.net:null;const noOpen=!(open>0);const be=breakeven();
+ c.querySelector('.pv').textContent=H+'%';
+ c.querySelector('.be-mk').style.left=be==null?'-9px':`calc(${be*100}% - 1px)`;c.querySelector('.nb-mk').style.left=C.nearP==null?'-9px':`calc(${C.nearP}% - 1px)`;
+ c.querySelector('.lg .t1').textContent='▏打平 '+(be==null?'100% 也不夠':(be*100).toFixed(1)+'%');c.querySelector('.lg .t2').textContent=C.nearP==null?'附近沒有即時有車資料':'▏'+(C.nearLabel||'附近')+' '+C.nearP+'%';
+ c.querySelector('.sum').innerHTML='每月淨收入 <span style="color:'+(r.net<0?'var(--bad)':'var(--acc-text,#1d4fbf)')+'">'+w(r.net)+'</span>，'+(noOpen?'開辦費還沒算':pay==null?'回不了本':pay.toFixed(1)+' 個月回本')+'（合約 '+months+' 個月）<span class="tag">還沒算完</span>';
+ const n=Object.keys(S).filter(k=>k!=='occ').length;c.querySelector('.reset').textContent='恢復系統推估值'+(n?'（會清掉妳改的 '+n+' 個數字）':'');
+ const open0=first?(C.open||[]):[...c.querySelectorAll('.rowsx details[open]')].map(x=>x.dataset.r);
+ const fk=document.activeElement&&document.activeElement.dataset?document.activeElement.dataset.k:null;
+ const T=t=>t?`<span class="tag">${t}</span>`:'';
+ const R=(k,d,v,neg,body,tag)=>`<details data-r="${k}"${(k==='每月淨收入'||k==='回本時間'?' tot':'')+(['每月營業額','充電收入','機車與大型車','每月營運成本','權利金分成','每月淨收入','回本時間'].includes(k)?' dyn':'')?' class="'+((k==='每月淨收入'||k==='回本時間'?'tot ':'')+(['每月營業額','充電收入','機車與大型車','每月營運成本','權利金分成','每月淨收入','回本時間'].includes(k)?'dyn':'')).trim()+'"':''}${open0.includes(k)?' open':''}><summary><span class="k">${k}</span><span class="d">${d}${T(tag)}</span><span class="v${neg?' neg':''}">${v}</span></summary><div class="bd">${body}</div></details>`;
+ const area=g('area');const o=[];
+ o.push(R('每月營業額',`月租 ${w(r.revM)}＋臨停 ${w(r.revT)}`,w(r.rev),0,
+ `<b>這一帶是</b> <select data-k="area"><option value="biz"${area==='biz'?' selected':''}>商業區／觀光區</option><option value="res"${area!=='biz'?' selected':''}>住宅區／商辦</option></select><span class="m">${C.areaNote}</span>
+ <b>月租：臨停</b>＝ ${area==='biz'?inp('rBiz',1):inp('rRes',1)}：${100-r.mr}<span class="m">商業區／觀光區預設 80：20、住宅區／商辦 60：40（Joy 11/17 定）；對照：台中 26 場 2026/09 月租車位占 47.5%、月租收入占 46%</span>
+ <b>月租</b>：${r.N} 格 × ${r.mr}% ＝ ${r.nM.toFixed(1)} 格 × 出租率 ${inp('rentRate',5,'%')} × 表訂月租 ${inp('monthFee',100,'元')} ＝ <b>${f(r.revM)}</b><span class="m">出租率是假設；上面拉桿只影響臨停和充電</span>
+ <b>臨停</b>：${r.N} 格 × ${100-r.mr}% ＝ ${r.nT.toFixed(1)} 格 × 有停車的比例 <b class="dy">${H}%</b> × 每小時 ${inp('hourFee',5,'元')} × 白天營業（假設） ${inp('tHours',1,'小時')} × 30 天 × 實際收到 ${inp('collect',0.01,'%')} ＝ <b class="dy">${f(r.revT)}</b><span class="m">實際收到：${C.collectNote||''}</span><span class="m">${C.feeNote}</span>`));
+ o.push(R('充電收入',`依法 ${C.evLaw} 格，合約 ${r.ev} 格`,w(r.evRev),0,
+ `<b>依法要設</b>：${C.evLaw} 格<span class="m">${C.evLawNote}</span><b>這份合約要設</b>：${inp('evCount',1,'格')}<span class="m">${C.evNote}</span>
+ <b>每月充電</b>：約 <b>${f(r.kwh)} 度</b><br>月租車：${r.evM.toFixed(1)} 格 × 每月 ${inp('evMonthKwh',10,'度')} ＝ ${f(r.kwhM)} 度<br>臨停車：${r.evT.toFixed(1)} 格 × 每槍 ${inp('kw',1,'瓩')} × 白天 ${g('tHours')} 小時 × 30 天 × 停的時間中充電 ${inp('evShare',5,'%')} × 有停車的比例 <b class="dy">${H}%</b> ＝ ${f(r.kwhT)} 度<br>
+ <b>充電收入</b>：${f(r.kwh)} 度 × 每度 ${inp('kwhPrice',1,'元')} ＝ <b class="dy">${f(r.evRev)}</b><span class="m">每槍 7 瓩、充電 50%、月租車每月 200 度、每度 10 元是 Joy 11/17 給的假設</span>`));
+ if(C.extra)o.push(R('機車與大型車',C.extraDesc,w(r.ext),0,`<b>機車</b>：${inp('motoN',1,'格')} × 有停車的比例 <b class="dy">${g('occ')}%</b> × 每格每天收 ${inp('motoFee',5,'元')} × 30 天 × 實際收到 ${g('collect')}% ＝ <b class="dy">${f(r.extM)}</b><span class="m">${C.motoNote}</span><b>大型車</b>：${inp('busN',1,'格')} × 有停車的比例 <b class="dy">${g('occ')}%</b> × 每小時 ${inp('busFee',5,'元')} × 白天 ${g('tHours')} 小時 × 30 天 × 實際收到 ${g('collect')}% ＝ <b class="dy">${f(r.extB)}</b><span class="m">${C.busNote}</span>`));
+ o.push(R('每月營運成本','人事、客服、稅、保險、水電、刷卡、電費','−'+w(r.ops),0,
+ `<b>24 小時派人</b>：${inp('staff',1000,'元／月')}<span class="m">${C.staffNote}</span><b>營運客服</b>：${inp('svc',100,'元／月')}<span class="m">${C.svcNote}</span><b>房屋稅</b>：${inp('houseTax',100,'元／月')}<span class="m">${C.taxNote}</span><b>地價稅</b>：${inp('landTax',100,'元／月')}<span class="m">${C.landNote}</span><b>保險</b>：${inp('insure',100,'元／月')}<span class="m">${C.insNote}</span><b>水電</b>：${inp('util',100,'元／月')}<span class="m">${C.utilNote}</span><b>刷卡手續費</b>：營業額 × ${inp('cardFee',0.01,'%')} ＝ <b class="dy">${f(r.fee)}</b><br><b>充電電費</b>：${f(r.kwh)} 度 × 每度 ${inp('kwhCost',0.5,'元')} ＝ ${f(r.evCost)}<span class="m">電費單價還沒查，先填 0</span>`,'還沒算完'));
+ o.push(R('每月權利金',C.rentDesc,'−'+w(r.rent),0,`<b>每月</b>：${inp('rent',100,'元')}<span class="m">${C.rentNote}</span>`,'還沒算完'));
+ if(C.share&&C.share.mode!=='none'){const sh=C.share;const tx=sh.taxIncl?`（含稅 ${f(r.yr)} ÷ 1.05 換未稅）`:'';let b='';
+  if(sh.mode==='pred')b=`<b>服務建議書寫的預估年收入</b>：${inp('predRev',10000,'元')}<span class="m">預設＝用系統預設的停車比例、照框裡現在的數字算出的一年營業額（含充電、機車大型車）；投標時我們自己寫，寫越低越早要分</span><b>一年實際</b>（照上面拉桿）：${f(r.yrN)} 元${tx}<br><b>超過</b> ${f(g('predRev'))} × 1.15 ＝ ${f(r.base)} 的部分 × 機關分 ${inp('shareRate',0.5,'%')} ÷ 12 ＝ <b class="dy">${f(r.share)}</b>`;
+  else if(sh.mode==='fixed')b=`<b>基準</b>：每月權利金 ${f(r.rent)} × 12 × 2 × 1.15 ＝ ${f(r.base)} 元／年<br><b>一年實際</b>：${f(r.yrN)} 元${tx}<br><b>超過的部分</b> × 機關分 ${inp('shareRate',1,'%')} ÷ 12 ＝ <b class="dy">${f(r.share)}</b>`;
+  else b=`<b>每月營業額（含充電、機車大型車）</b> ${f(sh.taxIncl?(r.rev+r.evRev+r.ext)/1.05:(r.rev+r.evRev+r.ext))}${sh.taxIncl?'（換未稅）':''} × ${inp('shareRate',0.1,'%')} ＝ <b class="dy">${f(r.share)}</b>`;
+  o.push(R('權利金分成',C.shareDesc,r.share>0.5?'−'+w(r.share):'0',0,b+`<span class="m">${C.shareNote}</span>`));}
+ o.push(R('每月淨收入','營業額＋充電'+(C.extra?'＋機車大型車':'')+' − 營運成本 − 權利金'+(C.share&&C.share.mode!=='none'?' − 分成':''),w(r.net),r.net<0,`${f(r.rev)} ＋ ${f(r.evRev)}${r.ext?' ＋ '+f(r.ext):''} − ${f(r.ops)} − ${f(r.rent)}${C.share&&C.share.mode!=='none'?' − '+f(r.share):''} ＝ <b>${f(r.net)}</b>`));
+ o.push(R('開辦費',C.openDesc,w(open),0,`<b>合計</b>：${inp('open',1000,'元')}<span class="m">${C.openNote}</span>`,'還沒算完'));
+ if(C.pre){o.push(R('開業前沒收入',C.preDesc,preCost>0.5?'−'+w(preCost):'0',0,`<b>沒收入的月數</b>：${inp('preMonths',1,'個月')}<span class="m">${C.preNote}</span><b>這段期間權利金照付嗎</b> <select data-k="preRent"><option value="1"${preRent?' selected':''}>照付</option><option value="0"${preRent?'':' selected'}>不用付</option></select><br><b>這段期間人事、客服打幾成</b>：${inp('preStaffPct',10,'%')}<span class="m">${C.preStaffNote||'營運前人事、客服不一定全額發生，100% 是上限'}</span><b>每月照付的成本</b>：(人事 ${f(g('staff'))} ＋ 客服 ${f(g('svc'))}) × ${Math.round(sp*100)}% ＋ 房屋稅 ${f(g('houseTax'))} ＋ 地價稅 ${f(g('landTax'))} ＋ 保險 ${f(g('insure'))} ＋ 水電 ${f(g('util'))}${preRent?' ＋ 權利金 '+f(g('rent')):''} ＝ ${f(fixedM)}<br>${pm} 個月 × ${f(fixedM)} ＝ <b>${f(preCost)}</b><span class="m">這筆錢加進回本時間的分子（開辦費＋開業前沒收入）</span>`));}
+ const over=pay!=null&&pay>months;
+ o.push(R('回本時間',C.pre?'(開辦費＋開業前沒收入) ÷ 每月淨收入':'開辦費 ÷ 每月淨收入',noOpen?'還沒算':pay==null?'回不了本':pay.toFixed(1)+' 個月'+(over?'（超過合約）':''),!noOpen&&(pay==null||over),noOpen?'開辦費還沒有數字（整修工程、設備都等報價），回本時間算不出來':pay==null?'每月淨收入是負的，回不了本':`${f(openT)}${preCost?'（開辦費 '+f(open)+' ＋ 開業前沒收入 '+f(preCost)+'）':''} ÷ ${f(r.net)} ＝ ${pay.toFixed(1)} 個月；合約 ${months} 個月`));
+ c.querySelector('.rowsx').innerHTML=o.join('');first=false;
+ if(fk){const el=c.querySelector(`[data-k="${fk}"]`);if(el)el.focus();}
+}
+c.addEventListener('change',e=>{const t=e.target;if(t.dataset.k){S[t.dataset.k]=t.tagName==='SELECT'?t.value:+t.value;save();draw();}});
+pr.addEventListener('input',()=>{S.occ=+pr.value;save();draw();});
+c.querySelector('.reset').addEventListener('click',()=>{S={};save();pr.value=g('occ');draw();});
+draw();})();</script>
+</div>
+
+</div><h2>名詞（點開複習）</h2>
+<details class="card"><summary>看不懂的名詞都在這裡</summary><div class="src">
+<b>權利金</b>：我們付給政府，換「經營這座停車場的權利」的錢。板橋是 4 年至少 1,734 萬。<br>
+<b>經營權利金（分成）</b>：收入超過投標時寫的預估 1.15 倍，超過的部分要分 47.5% 給機關。<br>
+<b>土地租金</b>：租用土地的錢，用申報地價 × 年利率算。板橋沒有，林森、停9 有。<br>
+<b>月租（月票）</b>：車主每個月付給我們的停車費，是我們的收入。<br>
+<b>臨停</b>：臨時停車，照小時收費。<br>
+<b>押標金</b>：投標時先押的錢，沒得標會退。<br>
+<b>履約保證金</b>：得標後押著，保證照契約做，期滿沒違約會退。<br>
+<b>打平</b>：收入剛好等於支出，不賺也不賠。<br>
+<b>有車的比例</b>：一段時間裡，停車格有車的時間占多少（含月租車）。<br>
+<b>加權平均</b>：大的停車場影響比較大的平均，算法是 Σ（格數 × 比例）÷ 總格數。<br>
+<b>未稅／含稅</b>：沒加營業稅／加了 5% 營業稅（含稅 ＝ 未稅 × 1.05）。<br>
+<b>房屋稅</b>：建物每年要繳的稅。板橋契約寫每年由我們付 709,765 元。<br>
+<b>地價稅</b>：土地每年要繳的稅，納稅的是地主；公有地做公眾停車場可以申請免稅。板橋有沒有免、會不會轉給我們，要問機關。<br>
+<b>開辦費</b>：開始經營前一次要花的錢，例如設備、典禮。<br>
+<b>回本時間</b>：開辦費 ÷ 每月淨收入，要幾個月才把開辦費賺回來。<br>
+<b>ROT／BOT</b>：ROT 是整修舊的再經營；BOT 是自己蓋新的再經營，期滿都還給政府。<br>
+<b>使用分區</b>：都市計畫規定這塊地可以做什麼，例如學校用地、停車場用地。<br>
+<b>附件E</b>：契約後面列「我們要自己裝哪些設備」的附件。<br>
+<b>PDF 第幾頁</b>：指契約 PDF 檔的頁數；契約紙本印的頁碼會少 6 頁。<br>
+<b>舊價</b>：公司以前買同樣設備的價格，記在設備價格分拆表。<br>
+<b>瓩、度</b>：瓩是充電速度；度是用電量，1 瓩充 1 小時 ＝ 1 度。</div></details>
+<h2>內部資料</h2>
+<div class="sub">算式和出處細節，給評估和案源核對用。給廠商的詢價表還沒寄出，要寄給哪幾家廠商等妳說。</div>
+<details><summary>給案源的 44 項資料清單回覆（10:28 已回）</summary><div class="src">補 7 件（招標原檔和頁碼、土地租金、每個金額標含稅或未稅等）、改寫法 6 處（門檻改 30 格以上、月租改月票並寫收費上限和調整條件等）。<br>案源已改成第 2 版。</div></details>
+<script>document.addEventListener("click",e=>{const b=e.target.closest(".cp");if(!b)return;e.preventDefault();const t=b.dataset.cp;const done=()=>{b.textContent="已複製";setTimeout(()=>b.textContent="複製路徑",1500)};(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(done).catch(()=>{const x=document.createElement("textarea");x.value=t;document.body.appendChild(x);x.select();try{document.execCommand("copy");done()}catch(_){}x.remove()})});</script>

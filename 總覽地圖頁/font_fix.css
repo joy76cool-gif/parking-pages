@@ -1,0 +1,12 @@
+/* 2026-11-24 字的層次（Joy：上面那句話和數字太小）：一句結論＞大數字＞清單＞小字；小字不低於 12px */
+.steps span{font-size:.8rem}
+.dl small,.nm small,.foot,.out,.mapnote{font-size:max(.78rem,12px)}
+@media (max-width:440px){.steps b{font-size:1.45rem}.steps span{font-size:.75rem}}
+@media (min-width:1000px){
+  .date{font-size:.9rem}
+  .lead{font-size:1.45rem;line-height:1.35;margin-bottom:10px}
+  .steps{padding-block:10px;margin-bottom:6px}.steps b{font-size:2.1rem;line-height:1.1}.steps span{font-size:.85rem}
+  .today{font-size:.85rem;margin-bottom:14px}
+  h2{margin:8px 0 4px}h2 .n{font-size:1.6rem}
+  summary{padding:5px 4px}
+}
